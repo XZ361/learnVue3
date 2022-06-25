@@ -1,7 +1,8 @@
 <script setup>
 // 1.直接导入组件
 import Comp from 'comps/Comp.vue'
-import {reactive, ref ,useAttrs ,useSlots,defineExpose} from 'vue'
+// import { log } from 'console';
+import {reactive, ref ,useAttrs ,useSlots} from 'vue'
 // 2.属性定义 （输入/父传子）
 const props = defineProps({
   msg: String
@@ -20,6 +21,12 @@ defineExpose({
   }
 })
 const count = reactive({count: 0})
+// 结合mockjs，模拟数据请求
+fetch('/api/getUsers')
+  .then((data) => data.json())
+  .then((res) => {
+    console.log(res.message);
+  })
 </script>
 
 <template>
