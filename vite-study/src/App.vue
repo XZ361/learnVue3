@@ -8,8 +8,6 @@ const onmyclick = ()=>{
   console.log('myclick from hellowworld!');
   console.log(hw.value.someMethod());
 }
-
-
 </script>
 
 <template>
