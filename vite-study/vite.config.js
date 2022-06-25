@@ -13,5 +13,7 @@ export default defineConfig({
     "utils": path.resolve(__dirname, "src/utils"),
     "styles": path.resolve(__dirname, "src/styles")
   }),
+  // css:{},
+  // esbuild:{},
   plugins: [vue()]
 })
