@@ -31,6 +31,8 @@ fetch('/api/getUsers')
 
 <template>
   <h1>{{ msg }}</h1>
+  <p @click="$store.commit('add')">{{$store.state.count}}</p>
+  <p>-----------</p>
   <comp></comp>
   <p>
     Recommended IDE setup:
@@ -49,10 +51,7 @@ fetch('/api/getUsers')
 
   <button type="button" @click="count++">count is: {{ count }}</button>
   <button @click=" emit('myclick')">emit派发事件</button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+  
 </template>
 
 <style scoped>
