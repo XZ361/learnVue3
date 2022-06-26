@@ -6,3 +6,5 @@
 - 定义事件（输出/子传父）
 - 向外暴漏事件
 - 整合vue-router4和vuex4,用工厂函数创建router实例/store实例 
+- 样式管理
+- 整合element3UI组件库的使用
