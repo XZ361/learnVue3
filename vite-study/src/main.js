@@ -7,4 +7,6 @@ import store from './store'
 // 全局样式
 import './styles/index.scss'
 
-createApp(App).use(router).use(store).mount('#app')
+import element3 from 'plugins/element'
+
+createApp(App).use(router).use(store).use(element3).mount('#app')

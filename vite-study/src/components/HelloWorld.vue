@@ -50,8 +50,8 @@ fetch('/api/getUsers')
   </p>
 
   <button type="button" @click="count++">count is: {{ count }}</button>
-  <button @click=" emit('myclick')">emit派发事件</button>
-  
+  <el-button @click=" emit('myclick')">emit派发事件</el-button>
+  <el-input></el-input>
 </template>
 
 <style scoped>

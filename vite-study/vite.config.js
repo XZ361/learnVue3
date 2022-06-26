@@ -14,7 +14,8 @@ export default defineConfig({
     "routes": path.resolve(__dirname, "src/routes"),
     "apis": path.resolve(__dirname, "src/apis"),
     "utils": path.resolve(__dirname, "src/utils"),
-    "styles": path.resolve(__dirname, "src/styles")
+    "styles": path.resolve(__dirname, "src/styles"),
+    "plugins": path.resolve(__dirname, "src/plugins")
   }),
   // css:{},
   // esbuild:{},
