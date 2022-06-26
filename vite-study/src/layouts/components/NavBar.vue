@@ -14,7 +14,7 @@
           <router-link to="/">
             <el-dropdown-item> 首页 </el-dropdown-item>
           </router-link>
-          <a target="_blank" href="https://github.com/57code/vite2-in-action/">
+          <a target="_blank" href="https://github.com">
             <el-dropdown-item>我的Github</el-dropdown-item>
           </a>
         </el-dropdown-menu>
@@ -30,7 +30,7 @@
   height: 50px;
   overflow: hidden;
   position: relative;
-  background: #fff;
+  background: rgb(33, 181, 176);
   box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
   .breadcrumb-container {
     float: left;

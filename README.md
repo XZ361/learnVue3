@@ -8,3 +8,4 @@
 - 整合vue-router4和vuex4,用工厂函数创建router实例/store实例 
 - 样式管理
 - 整合element3UI组件库的使用
+- 基础布局
