@@ -6,17 +6,21 @@ import path from 'path'
 
 /** @type {import('vite').UserConfig} */
 // https://vitejs.dev/config/
+const resolve = (dir) => path.join(__dirname, dir)
 export default defineConfig({
-  alias:({
-    "@": path.resolve(__dirname, "src"),
-    "comps": path.resolve(__dirname, "src/components"),
-    "views": path.resolve(__dirname, "src/views"),
-    "routes": path.resolve(__dirname, "src/routes"),
-    "apis": path.resolve(__dirname, "src/apis"),
-    "utils": path.resolve(__dirname, "src/utils"),
-    "styles": path.resolve(__dirname, "src/styles"),
-    "plugins": path.resolve(__dirname, "src/plugins")
-  }),
+  resolve:{
+    alias:({
+      "@": resolve( "src"),
+      "comps": resolve( "src/components"),
+      "views": resolve( "src/views"),
+      "routes": resolve( "src/routes"),
+      "apis": resolve( "src/apis"),
+      "utils": resolve( "src/utils"),
+      "styles": resolve( "src/styles"),
+      "plugins": resolve( "src/plugins"),
+      "layouts": resolve( "src/layouts")
+    })
+  },
   // css:{},
   // esbuild:{},
   plugins: [
