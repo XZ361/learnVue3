@@ -1,7 +1,7 @@
 <template>
     <div class="app-wrapper">
         <!-- 侧边栏 -->
-        <div class="sidebar-container"></div>
+        <sidebar class="sidebar-container"></sidebar>
         <!-- 内容区 -->
         <div class="main-container">
             <!-- 顶部导航栏 -->
@@ -15,6 +15,7 @@
 <script setup>
 import AppMain from "layouts/components/AppMain.vue";
 import NavBar from "layouts/components/NavBar.vue";
+import Sidebar from "layouts/components/Sidebar/index.vue"
 </script>
 
 <style lang="scss" scoped>

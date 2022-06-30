@@ -13,7 +13,7 @@ export default defineConfig({
       "@": resolve( "src"),
       "comps": resolve( "src/components"),
       "views": resolve( "src/views"),
-      "routes": resolve( "src/routes"),
+      "router": resolve( "src/router"),
       "apis": resolve( "src/apis"),
       "utils": resolve( "src/utils"),
       "styles": resolve( "src/styles"),
