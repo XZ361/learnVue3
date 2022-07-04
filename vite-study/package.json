@@ -7,6 +7,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "element3": "0.0.40",
     "mockjs": "^1.1.0",
     "path-browserify": "^1.0.1",

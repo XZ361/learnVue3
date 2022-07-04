@@ -3,6 +3,7 @@
 import Comp from 'comps/Comp.vue'
 // import { log } from 'console';
 import {reactive, ref ,useAttrs ,useSlots} from 'vue'
+import request from "utils/request"
 // 2.属性定义 （输入/父传子）
 const props = defineProps({
   msg: String
@@ -27,6 +28,13 @@ fetch('/api/getUsers')
   .then((res) => {
     console.log(res.message);
   })
+// 结合axios,实现数据请求封装
+try {
+  const users = await request('/getUsers')
+  console.log(users);
+} catch (error) {
+  console.log(error);
+}
 </script>
 
 <template>
