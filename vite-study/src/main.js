@@ -5,7 +5,7 @@ import router from './router'
 // 状态
 import store from './store'
 // 全局样式
-import './styles/index.scss'
+import 'styles/index.scss'
 
 import element3 from './plugins/element'
 

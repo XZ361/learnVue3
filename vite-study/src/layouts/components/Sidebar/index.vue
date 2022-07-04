@@ -19,11 +19,11 @@
 </template>
 
 <script setup>
-import SidebarItem from "./SidebarItem.vue"
-import {computed} from "vue"
-import { useRoute } from "vue-router"
-import {routes} from "router/index.js"
-import variables from "styles/variables.module.scss"
+import SidebarItem from "layouts/components/Sidebar/SidebarItem.vue";
+import {computed} from "vue";
+import { useRoute } from "vue-router";
+import routes  from "router/index.js";
+import variables from "styles/variables.module.scss";
 
 const activeMenu = computed(() => {
   const route = useRoute();

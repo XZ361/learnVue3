@@ -5,7 +5,7 @@
         <!-- 内容区 -->
         <div class="main-container">
             <!-- 顶部导航栏 -->
-            <nav-bar/>  
+            <navbar/>  
             <!-- 内容区 -->
             <app-main/>
         </div>
@@ -14,7 +14,7 @@
 
 <script setup>
 import AppMain from "layouts/components/AppMain.vue";
-import NavBar from "layouts/components/NavBar.vue";
+import Navbar from "layouts/components/Navbar.vue";
 import Sidebar from "layouts/components/Sidebar/index.vue"
 </script>
 
@@ -24,6 +24,20 @@ import Sidebar from "layouts/components/Sidebar/index.vue"
   @include clearfix;
   position: relative;
   height: 100%;
-  width: 100%;
+  width: 100vw;
+  .sidebar-container{
+    width: 160px;
+    height: 100vh;
+    background-color: rgba(8, 84, 84, 0.636);
+    float: left;
+    @include clearfix;
+  }
+  .main-container{
+    min-width: calc(100vw - 160px);
+    height: 100%;
+    float: right;
+    @include clearfix;
+  }
 }
+
 </style>
